@@ -29,7 +29,8 @@ def form_blocks(body):
                 yield cur_block
                 cur_block = []
         else:  # A label.
-            yield cur_block
+            if len(cur_block) > 0:
+                yield cur_block
             cur_block = [instr]
 
     if len(cur_block) > 0:
