@@ -1,0 +1,112 @@
+{
+    "functions": [
+        {
+            "instrs": [
+                {
+                    "dest": "a1",
+                    "op": "const",
+                    "value": 1
+                },
+                {
+                    "dest": "b1",
+                    "op": "const",
+                    "value": 2
+                },
+                {
+                    "args": [
+                        "a1",
+                        "b1"
+                    ],
+                    "dest": "c1",
+                    "op": "eq"
+                },
+                {
+                    "args": [
+                        "b1",
+                        "a1"
+                    ],
+                    "dest": "d1",
+                    "op": "ge"
+                },
+                {
+                    "args": [
+                        "b1",
+                        "a1"
+                    ],
+                    "dest": "e1",
+                    "op": "le"
+                },
+                {
+                    "args": [
+                        "b1",
+                        "a1"
+                    ],
+                    "dest": "f1",
+                    "op": "gt"
+                },
+                {
+                    "args": [
+                        "b1",
+                        "a1"
+                    ],
+                    "dest": "g1",
+                    "op": "lt"
+                },
+                {
+                    "dest": "a2",
+                    "op": "const",
+                    "value": 1
+                },
+                {
+                    "dest": "b2",
+                    "op": "const",
+                    "value": 2
+                },
+                {
+                    "args": [
+                        "a2",
+                        "b2"
+                    ],
+                    "dest": "c2",
+                    "op": "eq",
+                    "type": "bool"
+                },
+                {
+                    "args": [
+                        "b2",
+                        "a2"
+                    ],
+                    "dest": "d2",
+                    "op": "ge"
+                },
+                {
+                    "args": [
+                        "b2",
+                        "a2"
+                    ],
+                    "dest": "e2",
+                    "op": "le",
+                    "type": "bool"
+                },
+                {
+                    "args": [
+                        "b2",
+                        "a2"
+                    ],
+                    "dest": "f2",
+                    "op": "gt",
+                    "type": "bool"
+                },
+                {
+                    "args": [
+                        "b2",
+                        "a2"
+                    ],
+                    "dest": "g2",
+                    "op": "lt"
+                }
+            ],
+            "name": "main"
+        }
+    ]
+}
