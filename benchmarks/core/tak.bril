@@ -1,0 +1,23 @@
+# Compute the Tak function recursively.
+# ARGS: 10 1 0
+@tak(x: int, y: int, z: int): int {
+	cond: bool = lt y x;
+	br cond .recur .base;
+.recur:
+	one: int = const 1;
+	x_dec: int = sub x one;
+	tmp1: int = call @tak x_dec y z;
+	y_dec: int = sub y one;
+	tmp2: int = call @tak y_dec z x;
+	z_dec: int = sub z one;
+	tmp3: int = call @tak z_dec x y;
+	final: int = call @tak tmp1 tmp2 tmp3;
+	ret final;
+.base:
+	ret y;
+}
+
+@main(x: int, y: int, z: int) {
+	tmp: int = call @tak x y z;
+	print tmp;
+}
